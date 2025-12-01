@@ -1,0 +1,1 @@
+Throughout my years as a smartphone user and Linux enthusiast, I have often wondered if these two worlds could converge into a more powerful stream, carrying many users along with it. That's why I created this Mobian fork for the PinePhone Pro—a phone designed for privacy and freedom, where your device remains your own property, and your data stays under your control

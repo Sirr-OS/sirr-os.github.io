@@ -1,0 +1,137 @@
+# Site settings
+title: Sirr OS
+SEOTitle: SirrOS is a privacy-focused Linux distribution based on Mobian
+description: SirrOS is a privacy-focused Linux distribution based on Mobian.
+keyword: "jekyll, theme, blog, blog theme"
+url: "https://sirr-os.github.io"                    # your host, for absolute URL
+baseurl: ""                                         # for example, '/blog' if your blog hosted on 'host/blog'
+avatar: "img/header-avatar.jpeg"                    # the avatar showing on the homepage
+
+
+# GitHub repository (if the site is hosted by GitHub)
+repository: https://sirr-os.github.io
+repository_branch: main
+
+
+# Theme style settings
+theme_style:
+  highlight:    # "dark" (default), "light"
+  alert:        # "flat" (default), "modern"
+  post_preview: # "image" (default), "text"
+                # display post's featured image on homepage or not
+
+
+# Markdown enhancements settings
+math:
+  enable: true    # false (default), true
+                  # math rendering for all posts and keynotes
+  engine:         # "katex" (default), "mathjax"
+                  # only make sense when `math.engine: true`
+chart: true       # false (default), true
+mermaid: true     # false (default), true
+emoji-plus: true  # false (default), true
+
+
+# CDN settings
+cdn:
+  source:       # "jsdelivr" (default), "bootcdn", "unpkg", "cdnjs"
+  enable:       # false (default), true
+                # optimizing asset files via jsDelivr or not
+
+
+# Publish posts or collection documents with a future date.
+future: true
+
+collections:
+  experiences:
+    output: true
+  publications:
+    output: true
+  projects:
+    output: true
+
+
+# SNS settings
+sns:
+  RSS: false
+  github_username: commander-z3r0
+  email_address: commander.z3r0@proton.me
+  download_url: https://gofile.io/d/dKvwDd
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+# highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude:
+  - package.json
+  - package-lock.json
+  - README.md
+  - README-CN.md
+  - LICENSE
+  - Gruntfile.js
+  - Gemfile
+  - Gemfile.lock
+  - /node_modules
+anchorjs: true  # if you want to customize anchor. check out `anchor.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+# timezone: CN
+
+
+# Gems
+# you have to `bundle config set path 'vendor/bundle' && bundle install` before local preview
+plugins:
+  - jekyll-paginate
+  - jemoji
+
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM                       # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    disable: true                  # we use highlight.js for syntax highlighting, so we disable rouge here
+
+
+# Navigation menu settings
+menus:
+  - title: Home
+    font: fab fa-fort-awesome
+    url: /
+  - title: About
+    font: fas fa-laptop
+    submenus:
+      - title: Me
+        font: fas fa-fire
+        url: /about/
+  - title: Archive
+    font: fas fa-archive
+    url: /archive/
+  - title: Links
+    font: fas fa-link
+    url: /links/
+
+
+# Comment settings
+comment:
+  provider: gitalk # false (default), "disqus", "gitalk", "valine"
+
+  # Gitalk settings
+  # https://github.com/Sirr-OS/sirr-os.github.io
+  gitalk:
+    clientID: 'Ov23liZUpx3EgpueKWbq'
+    clientSecret: 'bc4a51fb4bb97fdb442c505fd5a8b35816fc80b5'
+    repo: Sirr-OS
+    owner: Commander-Z3R0
+    admin:
+      - Commander-Z3R0
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+# Whether or not to enable Hitokoto (the bubble on homepage)
+hitokoto: false
