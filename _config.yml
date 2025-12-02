@@ -1,6 +1,6 @@
 # Site settings
 title: Sirr OS
-SEOTitle: SirrOS is a privacy-focused Linux distribution based on Mobian
+SEOTitle: SirrOS
 description: SirrOS is a privacy-focused Linux distribution based on Mobian.
 keyword: "jekyll, theme, blog, blog theme"
 url: "https://sirr-os.github.io"                    # your host, for absolute URL
