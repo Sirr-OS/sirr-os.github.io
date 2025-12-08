@@ -54,7 +54,7 @@ collections:
 # SNS settings
 sns:
   RSS: false
-  github_username: commander-z3r0
+  github_username: sirr-os
   email_address: commander.z3r0@proton.me
   download_url: https://gofile.io/d/dKvwDd
 
