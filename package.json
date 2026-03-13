@@ -8,9 +8,9 @@
   "homepage": "https://sirr-os.github.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Renovamen/jekyll-theme-gungnir"
+    "url": "https://github.com/Sirr-OS/Sirr-OS"
   },
-  "bugs": "https://github.com/Renovamen/jekyll-theme-gungnir/issues",
+  "bugs": "https://github.com/Sirr-OS/Sirr-OS/issues",
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-banner": "~0.6.0",
