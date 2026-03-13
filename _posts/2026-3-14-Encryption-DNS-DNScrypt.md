@@ -75,9 +75,10 @@ AdGuard DNS Unfiltered explicitly declares that it **does not log user queries**
 
 ## Base configuration in SirrOS
 
-The SirrOS configuration file is located at `/etc/dnscrypt-proxy/dnscrypt-sirros.toml`. The most relevant parameters:
+The SirrOS configuration file is located at `/etc/dnscrypt-proxy/dnscrypt-proxy.toml`. The most relevant parameters:
 
 ```toml
+[...]
 # Explicitly selected resolver
 server_names = ['adguard-dns-unfiltered-doh']
 
@@ -98,6 +99,7 @@ require_dnssec = false    # DNSSEC not mandatory (AdGuard supports it anyway)
 
 # Never force TCP (unnecessary unless routing through Tor)
 force_tcp = false
+[...]
 ```
 
 The proxy listens on `127.0.0.1:53` — meaning system applications send their DNS queries to the device itself, and `dnscrypt-proxy` handles encrypting and forwarding them to the remote resolver.
