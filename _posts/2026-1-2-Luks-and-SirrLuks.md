@@ -17,15 +17,19 @@ SirrOS implements full disk encryption using LUKS (Linux Unified Key Setup) to p
 
 The encryption parameters used in SirrOS are designed for strong security:
 
-* LUKS version 2 for modern key management.
+* LUKS version 2 for modern encryption and key management.
+  
+* AES-XTS with a 512-bit key size and `plain64` sector IV mode.
 
-* AES-XTS-ESSIV with SHA-256 for encryption and block scrambling.
+* SHA-512 as the hash algorithm for key derivation.
 
-* 512-bit key size to resist brute-force attacks.
+* Argon2id as the password-based key derivation function (PBKDF).
 
-* Argon2id PBKDF with high memory usage and iteration time to slow down password guessing.
+* 512 MiB of memory allocated to Argon2id (`524288` KiB).
 
-* Compatible with ext4, f2fs, and btrfs filesystems.
+* Two parallel threads used during key derivation.
+
+* A 3000 ms target processing time to slow down password-guessing 
 
 These settings ensure that even if someone gains physical access to the device, the encrypted data cannot be read without the correct password.
 
