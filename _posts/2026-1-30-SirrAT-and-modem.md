@@ -223,7 +223,7 @@ Unauthorized IMEI modification can result in:
 - Civil liability
 - Fines and imprisonment
 
-**Do not proceed unless you have explicit legal authorization to do so.** This option is provided for educational, research, and legitimate use cases only (e.g., testing on lab equipment, authorized security research).
+Use this option at your own risk. The authors accept no responsibility for any misuse, damage, or consequences resulting from its use. With great power comes great responsibility.
 
 ### How It Works
 
@@ -243,6 +243,7 @@ This modifies the modem's firmware to report a different IMEI to the network on 
 - Authorized penetration testing of carrier systems
 - Forensic analysis on seized devices
 - Firmware development and modem testing
+- Privacy-related use cases, **only where IMEI modification is expressly permitted by applicable law and regulations**.
 
 **Again: Do not use this for evading law enforcement, fraud, or illegal activities.** Possession of tools capable of IMEI modification without clear legal justification may itself be illegal in your jurisdiction.
 
