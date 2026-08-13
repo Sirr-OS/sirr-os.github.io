@@ -371,7 +371,6 @@ The advantage: unlike blindly swapping hardware or SIMs, **SirrAT allows verific
 3. **Know your operator**: Use Option 5 to understand which network you're connected to
 4. **Document BTS patterns**: Track which antennas you connect to; correlations reveal location
 5. **Reboot when needed**: Use Option 7 to clear modem state if experiencing issues
-6. **Avoid IMEI changes in production**: Reserve Option 6 for lab environments and research only
 
 ---
 
